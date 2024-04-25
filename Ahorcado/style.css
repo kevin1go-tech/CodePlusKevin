@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgreen;
+}
+
+.header {
+    background-color: darkgreen;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    color: #fbff00;
+    font-size: 20px;
+}
+
+.container {
+    text-align: center;
+}
+
+#canvas {
+    background-color: lightgreen;
+    border: 2px solid darkgreen;
+    margin-top: 20px;
+}
+
+#playButton {
+    position: absolute; /* Añadido para posicionar el botón */
+    bottom: 10px; /* Ajuste para posicionar debajo de la imagen */
+    left: 50%; /* Añadido para centrar horizontalmente */
+    transform: translateX(-50%); /* Añadido para centrar horizontalmente */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 25% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#restartButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: orange;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
